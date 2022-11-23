@@ -1,0 +1,6 @@
+test.*
+train.*
+validate.*
+test/
+train/
+validate/
