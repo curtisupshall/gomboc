@@ -1,6 +1,6 @@
 
 .PHONY:
-	dump clean
+	dump clean gomboc close
 
 clean:
 	rm -rf ./test ./train ./validate
@@ -18,4 +18,8 @@ dump:
 	@printf "Done.\n"
 
 gomboc:
-	docker-compose up
+	docker-compose up -d
+
+close:
+	docker-compose down
+
